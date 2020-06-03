@@ -29,7 +29,7 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: installing surge
-      run: npm install --globAl surge
+      run: npm install --global surge
     - name: Deploying using surge
       run: surge ./ old-furniture.surge1.sh --token ${{secrets.SURGE_TOKEN}}
 
