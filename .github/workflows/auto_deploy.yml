@@ -31,6 +31,6 @@ jobs:
     - name: installing surge
       run: npm install --globel surge
     - name: Deploying using surge
-      run: surge ./ old-furniture.surge1.sh --token ${{secrets.surge_token}}
+      run: surge ./ old-furniture.surge1.sh --token ${{secrets.SURGE_TOKEN}}
 
 
